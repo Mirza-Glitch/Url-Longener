@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>URL longener</h2>
+    <form>
+      <div class="form-group">
+        <label for="url-input">URL:</label>
+        <input type="url" id="url-input" placeholder="https://bit.ly/insta" required />
+    </div>
+    <div style="display: none" class="longLink">
+      <span style="display: none" id="success">
+        <p>
+          The Extended Url of your given link is:
+        </p>
+        <a href=""></a>
+      </span>
+      <span style="display: none" id="err">
+        <p>
+          Looks like your given link cannot be extended :-(
+        </p>
+      </span>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
+<script src="/script.js"></script>
+</body>
+  </html>
